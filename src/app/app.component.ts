@@ -6,11 +6,16 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+	title = 'chatbot';
 	imagePath: string;
+
+	toggleChat = false;
 
 	constructor() {
 		this.imagePath = '../assets/images/ow.png';
 	}
 
-	title = 'chatbot';
+	toggleChatBox() {
+		this.toggleChat = !this.toggleChat;
+	}
 }

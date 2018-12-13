@@ -7,6 +7,14 @@
 
 .chatbox {
 	position: fixed;
-	right: 140px;
+	right: 0;
+	top: 0px;
+	height: 100vh;
 	bottom: 100px;
+	transition: width .4s;
+}
+
+.gl-chatbox {
+	display: none;
+	width: 0;
 }

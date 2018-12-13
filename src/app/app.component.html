@@ -1,6 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="gl-background container-fluid">
-	<div class="chatbox">
+	<button (click)="toggleChatBox()"></button>
+	<div class="chatbox" [class.gl-chatbox]="toggleChat">
 		<chat-dialogue></chat-dialogue>
 	</div>
 	<router-outlet></router-outlet>
