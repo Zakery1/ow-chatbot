@@ -1,0 +1,12 @@
+.gl-background {
+		background-image: url("../assets/images/ow.png");
+		background-repeat: no-repeat;
+		height: 170vh;
+		width: 100%;
+}
+
+.chatbox {
+	position: fixed;
+	right: 140px;
+	bottom: 100px;
+}
