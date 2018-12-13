@@ -1,6 +1,6 @@
 .chat-box {
 	text-align: center;
 	background: grey;
-	width: 20vw;
+	/* width: 20vw; */
 	height: 100vh;
 }
