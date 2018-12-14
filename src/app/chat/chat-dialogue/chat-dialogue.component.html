@@ -1,6 +1,8 @@
 <div class="chat-box">
-	<h1>OW Chatbot</h1>
-	<button (click)="toggle()">Close chat</button>
+	<div class="top-of-chat">
+		<img class="gl-chat-bot-img" src="../../../assets/images/zak2.png" alt="chat bot image">
+		<button class="gl-close-chat" (click)="toggle()"><i class="fa fa-times-circle"></i></button>
+	</div>
 	<ng-container *ngFor="let message of messages | async">
 	<div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',                                 'to':   message.sentBy === 'user' }">
 		{{ message.content }}

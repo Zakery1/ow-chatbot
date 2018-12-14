@@ -9,7 +9,7 @@ export class AppComponent {
 	title = 'chatbot';
 	imagePath: string;
 
-	toggleChat = false;
+	toggleChat = true;
 
 	constructor() {
 		this.imagePath = '../assets/images/ow.png';

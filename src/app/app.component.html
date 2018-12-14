@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="gl-background container-fluid">
-	<button class="gl-robot" [class.robot]="toggleChat" (click)="toggleChatBox()"> <img class="gl-image" src="/assets/images/zak.png" alt=""></button>
+	<button class="gl-robot" [class.robot]="!toggleChat" (click)="toggleChatBox()"> <img class="gl-image" src="/assets/images/zak.png" alt=""></button>
 	<div class="chatbox" [class.gl-chatbox]="toggleChat">
 		<chat-dialogue (toggleChat)="toggleChatBox()"></chat-dialogue>
 	</div>

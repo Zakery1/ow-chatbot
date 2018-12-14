@@ -1,52 +1,55 @@
 .gl-background {
-		background-image: url("../assets/images/ow.png");
-		background-repeat: no-repeat;
-		height: 170vh;
-		width: 100%;
+    background-image: url("../assets/images/ow.png");
+    background-repeat: no-repeat;
+    height: 170vh;
+    width: 100%;
+}
+
+button {
+	background: none;
+	border: none;
+	outline: none;
 }
 
 .chatbox {
-	position: fixed;
-	right: 0;
-	top: 0px;
-	height: 100vh;
-	bottom: 100px;
-	width: 20vw;
-	transition: width .4s;
+    position: fixed;
+    right: 0;
+    top: 0px;
+    height: 100vh;
+    bottom: 100px;
+    width: 20vw;
+    transition: width .4s;
 }
 
 .gl-chatbox {
-	width: 0;
+    width: 0;
 }
 
 .robot {
-	/* opacity: 0; */
+	display: none;
 }
 
 .gl-image {
-	margin: 0;
-	max-width: 200px;
+    margin: 0;
+    max-width: 300px;
 }
 
 .gl-image:hover {
-	cursor: pointer;
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
-  -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -ms-transition: all .4s ease-in-out;
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
 }
 
 .gl-robot {
-	padding: 0;
-	margin: 0;
-	position: fixed;
-	right: 30vw;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    left: 10vw;
 	bottom: 15vh;
-	box-shadow: 5px 10px;
 }
-
-

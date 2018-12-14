@@ -1,6 +1,20 @@
 .chat-box {
 	text-align: center;
-	background: grey;
+	background: rgb(241, 239, 239);
+	border: solid 2px #34A6DC;
 	/* width: 20vw; */
 	height: 100vh;
+	border-style: 18px  inset  #d2e3ed;
+}
+
+.gl-times {
+	color: rgb(17, 17, 17);
+	opacity: .5;
+	outline: none;
+}
+
+.gl-chat-bot-img {
+	max-width: 280px;
+	margin: 20px 0 20px 0;
+	
 }
