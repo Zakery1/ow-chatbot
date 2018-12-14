@@ -42,6 +42,7 @@
 
 .gl-robot {
 	padding: 0;
+	margin: 0;
 	position: fixed;
 	right: 30vw;
 	bottom: 15vh;

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ChatService, Message } from '../chat.service';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/scan';
@@ -10,7 +10,11 @@ import 'rxjs/add/operator/scan';
 	styleUrls: ['./chat-dialogue.component.css']
 })
 
+
+
 export class ChatDialogComponent implements OnInit {
+
+@Output() toggleChat: EventEmitter<boolean> = new EventEmitter<boolean>();
 
 	messages: Observable<Message[]>;
 	formValue: string;
@@ -28,4 +32,7 @@ export class ChatDialogComponent implements OnInit {
 		this.formValue = '';
 	}
 
+	toggle() {
+		this.toggleChat.emit();
+	}
 }

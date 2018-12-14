@@ -1,6 +1,6 @@
 <div class="chat-box">
 	<h1>OW Chatbot</h1>
-	<button>Close chat</button>
+	<button (click)="toggle()">Close chat</button>
 	<ng-container *ngFor="let message of messages | async">
 	<div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',                                 'to':   message.sentBy === 'user' }">
 		{{ message.content }}
