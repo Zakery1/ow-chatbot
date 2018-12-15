@@ -5,9 +5,10 @@
 	/* width: 20vw; */
 	height: 100vh;
 	border-style: 18px  inset  #d2e3ed;
+	overflow-y: auto;
 }
 
-.gl-times {
+.gl-exit {
 	color: rgb(17, 17, 17);
 	opacity: .5;
 	outline: none;
@@ -15,6 +16,14 @@
 
 .gl-chat-bot-img {
 	max-width: 280px;
-	margin: 20px 0 20px 0;
-	
+	margin: 20px 0 20px 28px;
+	/* position: fixed; */
+}
+
+.chat-dialogue {
+	margin-top: 250px;
+}
+
+.top-of-chat {
+	position: absolute;
 }

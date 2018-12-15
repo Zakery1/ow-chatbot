@@ -11,13 +11,13 @@ import 'rxjs/add/operator/scan';
 })
 
 
-
 export class ChatDialogComponent implements OnInit {
 
 @Output() toggleChat: EventEmitter<boolean> = new EventEmitter<boolean>();
 
 	messages: Observable<Message[]>;
 	formValue: string;
+	messager = 'Zak: ';
 
 	constructor(public chat: ChatService) { }
 
@@ -36,3 +36,4 @@ export class ChatDialogComponent implements OnInit {
 		this.toggleChat.emit();
 	}
 }
+

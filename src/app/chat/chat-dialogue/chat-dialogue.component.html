@@ -1,14 +1,17 @@
 <div class="chat-box">
 	<div class="top-of-chat">
 		<img class="gl-chat-bot-img" src="../../../assets/images/zak2.png" alt="chat bot image">
-		<button class="gl-close-chat" (click)="toggle()"><i class="fa fa-times-circle"></i></button>
+		<button class="gl-close-chat" (click)="toggle()"><i class="gl-exit fa fa-times-circle"></i></button>
 	</div>
-	<ng-container *ngFor="let message of messages | async">
-	<div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',                                 'to':   message.sentBy === 'user' }">
-		{{ message.content }}
+	<div class="chat-dialogue">
+		<ng-container *ngFor="let message of messages | async">
+		<div class="message" [ngClass]="{ 'from': message.sentBy === 'bot', 'to':   message.sentBy === 'user' }">
+			<span *ngIf="message.sentBy === 'user'">Me:</span>
+			{{ message.content }}
+		</div>
+		</ng-container>
+		<label for="nameField">Your Message</label>
+		<input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
+		<button (click)="sendMessage()">Send</button>
 	</div>
-	</ng-container>
-	<label for="nameField">Your Message</label>
-	<input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
-	<button (click)="sendMessage()">Send</button>
 </div>

@@ -33,14 +33,9 @@ export class ChatService {
 
 		return this.client.textRequest(msg)
 			.then(res => {
-				const speech = res.result.fulfillment.speech;
+				const speech = 'Zak: ' + res.result.fulfillment.speech;
 				const botMessage = new Message(speech, 'bot');
 				this.update(botMessage);
 			});
 		}
-
-
-
-
-
 }
