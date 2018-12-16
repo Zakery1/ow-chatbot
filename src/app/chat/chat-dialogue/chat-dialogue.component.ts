@@ -17,7 +17,7 @@ export class ChatDialogComponent implements OnInit {
 
 	messages: Observable<Message[]>;
 	formValue: string;
-	messager = 'Zak: ';
+	messager = '';
 
 	constructor(public chat: ChatService) { }
 

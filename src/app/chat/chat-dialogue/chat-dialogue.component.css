@@ -1,11 +1,18 @@
 .chat-box {
-	text-align: center;
+	/* text-align: center; */
 	background: rgb(241, 239, 239);
 	border: solid 2px #34A6DC;
 	/* width: 20vw; */
 	height: 100vh;
+	max-height: 100vh;
 	border-style: 18px  inset  #d2e3ed;
 	overflow-y: auto;
+	padding-bottom: 200px;
+}
+
+.top-of-chat {
+	position: absolute;
+	background: rgb(241, 239, 239);
 }
 
 .gl-exit {
@@ -21,9 +28,65 @@
 }
 
 .chat-dialogue {
-	margin-top: 250px;
+	background: white;
+	margin: 250px 20px 50px 20px;
+	font-size: 20px;
+	padding-right: 12px;
+	overflow: scroll; 
+	/* height: xyz; */
+	/* overflow-y: auto; */
+	height: 67vh;
 }
 
-.top-of-chat {
-	position: absolute;
+.close-container {
+	display: flex;
+	align-content: stretch;
+	justify-content: center;
+	text-align: right;
 }
+
+.gl-close-chat {
+
+	/* text-align: right; */
+	border: none;
+	font-size: 12px;
+	cursor: pointer;
+	outline: none;
+	color: black;
+	margin-left: 30px;
+	/* float: right; */
+	padding-right: 10px;
+	background: none;
+}
+
+.to {
+	text-align: right;
+	word-wrap: break-word;
+	color: green;
+}
+
+.from {
+	color: blue;
+	/* margin-top: 5px; */
+	padding-left: 4px;
+	border: 1px solid grey;
+}
+
+.to, .from {
+	margin: 10px 0 0 4px;
+}
+
+.gl-my-message {
+	margin-right: 4.5px;
+}
+
+.gl-input-message {
+	/* text-align: left; */
+	position: fixed;
+	bottom: 0;
+	background: rgb(241, 239, 239);
+	padding-bottom: 20px;
+	line-height: 20px;
+	width: 19vw;
+}
+
