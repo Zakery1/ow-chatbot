@@ -8,15 +8,17 @@
 	<div class="chat-dialogue" #scrollMe [scrollTop]="scrollMe.scrollHeight" >
 		<ng-container *ngFor="let message of messages | async">
 		<div class="message" [ngClass]="{ 'from': message.sentBy === 'bot', 'to':   message.sentBy === 'user' }">
-			<span *ngIf="message.sentBy === 'user'">Me: <br> <div class="gl-my-message"> {{ message.content }} </div></span>
-			<span *ngIf="message.sentBy === 'bot'">Zak: <br> {{ message.content }}</span>
+		<div class="gl-chat-div"><span *ngIf="message.sentBy === 'user'"><div class="gl-chatter-name">Me</div>   <span class="gl-my-message"> {{ message.content }} </span></span></div>
+		<div class="gl-chat-div"><span *ngIf="message.sentBy === 'bot'"><div class="gl-chatter-name">Zak</div> <span class="gl-robot-message"> {{ message.content }} </span></span></div>
 			
 		</div>
 		</ng-container>
+		<div class="gl-input-container">
+			<!-- <label for="nameField">Your Message</label> -->
+			<input type="text" style="color:rgb(119, 119, 119);" 
+			placeholder="Say something..." class="gl-input" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
+			<!-- <button (click)="sendMessage()">Send</button> -->
+		</div>
 	</div>
-	<div class="gl-input-message">
-		<label for="nameField">Your Message</label>
-		<input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
-		<button (click)="sendMessage()">Send</button>
-	</div>
+
 </div>
