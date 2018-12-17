@@ -39,10 +39,11 @@
 	margin: 250px 20px 0px 20px;
 	font-size: 20px;
 	padding-right: 12px;
-	overflow: scroll; 
+	/* overflow: scroll;  */
 	/* height: xyz; */
-	/* overflow-y: auto; */
-	height: 67vh;
+	overflow-y: auto;
+	min-height: 523px;
+	max-height: 523px;
 }
 
 .close-container {
